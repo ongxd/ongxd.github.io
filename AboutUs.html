@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/naviBar.css">
+<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+<title>About Us</title>
+<style>
+body{
+    margin:0 auto; 
+}
+/*Our Background segment*/
+.aboutUs{
+    border-bottom:1px solid black;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding:10px;
+    overflow:auto;
+}
+/*slideshow*/
+.slideShow{
+	width:30%;
+	height:500px;
+    float:left;
+    margin-right:10px;
+}
+.slideShow img{
+    width:100%;
+    height:500px;
+    border-radius:10px 10px 10px 10px;
+}
+.mySlide{
+	display:none;
+}
+
+.aboutUs p{
+    text-align:justify;
+}
+/*Mission*/
+.mission{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.mission .slot{
+    display:inline-block;
+    width:32%;
+    text-align:center;
+    padding:5px;
+    vertical-align:top;
+}
+.slot img{
+    width:80px;
+    height:80px;
+}
+.mission .middle-slot{
+    box-sizing:border-box;
+    border-left:1px solid black;
+    border-right:1px solid black;
+
+}
+</style>
+</head>
+<body>
+<!--top navigation bar (logo,cart icon,user icon, navigation link)-->
+<div class="nav_container">
+    <div class="animation">
+    </div>
+    <div class="logo">
+        <img src="Images/1.jpg" alt="" width="150" height="120">
+    </div>
+    <div class="icon-container">
+        <img src="Images/cart.png" width="50" height="40">
+        <img src="Images/user.png" width="50" height="40">
+    </div>
+    <nav class="navBar">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="R&R.html">Review & Rating</a>
+    </nav>
+</div>
+
+<div class="aboutUs">
+    <!--slideshow-->
+    <div class="slideShow">     
+
+        <div class="mySlide">
+            <img src="Images/slide1.png"/>
+        </div>
+        
+        <div class="mySlide">
+            <img src="Images/slide2.png"/>
+        </div>
+        
+        <div class="mySlide">
+            <img src="Images/slide3.png"/>
+        </div>      
+    </div>
+
+    <h1>Our Background</h1>
+    <p>TOLY was established in early 2018. The company s management team is composed by a number of experienced trainers from Taiwan. With their rich experience in management and their their valuable perspective in the industry, we are committed to develop the company and seek to be recognised globally.</p>
+    <p>TOLY management team has greatly expanded internationally and on a quest to search for high quality ingredients around the world. Equipped with a deep knowledge and understanding of tea product, the company takes lead in new line of tea drink such as Brown Sugar Pearl Milk Tea which was well favoured by tea lovers.</p>
+    <p>The roots of TOLY Bubble Tea sprouted in Kuala Lumpur where James, Anthony, & Davis were schoolmates. Unknowingly, their friendship would blossom into a partnership many years later, each sharing the same vision of a new healthy lifestyle and a vision to redefine the culture of tea-drinking.</p>
+    <p>Turning their dreams into reality, the three of them set off on a journey where their wings of discovery spread across China, Taiwan and Japanese, researching and sampling all varieties of tea. Their quest to source the best tea leaves amounted to sampling 20 cups of tea a day. Sifting through the qualities of each type of tea leaf, they tested the suitability of each tea variety by trial and error. At the same time, they sampled a multitude of fruit varieties.</p>
+    <p>Turning their dreams into reality, the three of them set off on a journey where their wings of discovery spread across China, Taiwan and Japanese, researching and sampling all varieties of tea. Their quest to source the best tea leaves amounted to sampling 20 cups of tea a day. Sifting through the qualities of each type of tea leaf, they tested the suitability of each tea variety by trial and error. At the same time, they sampled a multitude of fruit varieties.</p>
+
+</div>
+
+<div class="mission">
+    <h3>OUR MISSION:</h3>
+    <div class="slot">
+        <img src="Images/mission1.png"/>
+        <p>Make everyone no need to worry about not being able to find our shops, as we have our shops all aroudn the world.</p>
+    </div>
+    <div class="slot middle-slot">
+        <img src="Images/mission2.png"/>
+        <p>We will make sure our's products is in a good condition before we sell it to customers.</p>
+    </div>
+    <div class="slot">
+        <img src="Images/mission1.png"/>
+        <p>We have our shops around the world, no need to worry about not being able to find our shops.</p>
+    </div>
+
+</div>
+
+
+
+<footer>
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://twitter.com" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a></br>
+    <i class="fa fa-copyright"></i>
+    CopyRight 2021 My Company Sdn Bhd
+</footer>
+
+<script>
+    var slideIndex=0;
+    autoSlide();
+
+    function autoSlide(){
+	var slides= document.getElementsByClassName("mySlide");
+	for(var i=0;i<slides.length;i++){
+		slides[i].style.display="none";
+	}
+	slideIndex++;
+	if(slideIndex>slides.length){
+		slideIndex=1;
+	}
+	slides[slideIndex-1].style.display="block";
+	setTimeout(autoSlide,3000);
+}
+</script>
+</body>
+</html>
