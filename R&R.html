@@ -3,82 +3,66 @@
 <head>
 <!-- Font Awesome Icon Library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="CSS/naviBar.css">
+<link rel="stylesheet" type="text/css" href="CSS/footer.css">
 <title>R&R</title>
 <style>
 body{
     margin:0 auto; 
 }
-/*styling container*/
-.nav_container{
-   background:#ccf5ff;
-   position:relative;
-   text-align:center;
-   box-shadow: 1px 10px 5px -5px grey;
-   width:100%;
+.R-container{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+    padding:10px 0;
+    border:1px solid black;
 }
-/*styling icon_container*/
-.icon-container{
-    position:absolute;
-    right:0px;
-    top:0px;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display:inline-block;
+  margin:10px;
 }
-/*styling icon*/
-.icon-container img{
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front img{
+    margin-top:10px;
     border-radius:50%;
 }
-/*styling navigation bar/link*/
-.navBar{
-    background-color: #80e5ff;
-    overflow:hidden;
+.flip-card-front p{
+    background-color:#e6faff;
+    font-size:18px;
+    padding:10px;
+    vertical-align:center;
 }
-.navBar a{
-    text-decoration:none;
-    background-color:#33d6ff;  
-    display:inline-block;
-    padding:10px 20px;
-    width:10%;
-    text-align:center;
-    margin-right:-3px;
-    color:white;
-    
-}
-.navBar a:hover{
-    background-color:#00a3cc;
-}
-/*Footer*/
-footer{
-    background-color:#ccf5ff;
-    text-align:center;
-    margin-top:15px;
-    padding:5px 0;
-}
-footer .fa{
-    padding: 15px 15px;
-    font-size: 12px;
-    width: 10px;
-    text-decoration: none;
-    border-radius: 30%;
-    cursor: pointer;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-.fa-instagram {
-    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-    color: white;
-}
-footer p{
-    margin:0;
-    padding:-100;
-    border:1px solid black;
+.flip-card-back {
+  background-color: #4ddbff;
+  color: white;
+  transform: rotateY(180deg);
+  vertical-align: middle;
 }
 </style>
 </head>
@@ -102,6 +86,71 @@ footer p{
         <a href="R&R.html">Review & Rating</a>
     </nav>
 </div>
+
+<div class="R-container">
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">        
+            <img src="Images/reviewer1.png" width="100" height="100" style="border:1px solid black;">
+            <h3> 4.5 / 5</h3> 
+            <h3>Jason Lim </h3>
+            <p><b>FLIP ME</b></p>
+        </div>
+        <div class="flip-card-back">
+            <p>Good service.</p>
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">        
+            <img src="Images/reviewer1.png" width="100" height="100" style="border:1px solid black;">
+            <h3> 4.5 / 5</h3> 
+            <h3>Jason Lim </h3>
+            <p><b>FLIP ME</b></p>
+        </div>
+        <div class="flip-card-back">
+            <p>Good service.</p>
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">        
+            <img src="Images/reviewer1.png" width="100" height="100" style="border:1px solid black;">
+            <h3> 4.5 / 5</h3> 
+            <h3>Jason Lim </h3>
+            <p><b>FLIP ME</b></p>
+        </div>
+        <div class="flip-card-back">
+            <p>Good service.</p>
+        </div>
+    </div>
+</div>
+
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">        
+            <img src="Images/reviewer1.png" width="100" height="100" style="border:1px solid black;">
+            <h3> 4.5 / 5</h3> 
+            <h3>Jason Lim </h3>
+            <p><b>FLIP ME</b></p>
+        </div>
+        <div class="flip-card-back">
+            <p>Good service.adadsda s das das adasd sa dsa dadas dadsad sad asd sadsad as dad sadad as dadsa dsad as</p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
 <footer>
     <a href="https://www.facebook.com" class="fa fa-facebook"></a>
     <a href="https://twitter.com" class="fa fa-twitter"></a>
