@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="CSS/naviBar.css">
+<link rel="stylesheet" type="text/css" href="CSS/footer.css">
+<title>Contact Us</title>
+<style>
+body{
+    margin:0 auto; 
+}
+.contactUs{
+    width:80%;
+    margin:10px auto;
+    /*border:1px solid black;*/
+    padding:10px;
+    text-align:center;
+}
+
+.googleMap{
+    /*border:1px solid black;*/
+    height:600px;
+    padding:10px;
+    width:40%;
+    display:inline-block;
+    vertical-align:top;
+}
+.googleMap iframe{
+    width:80%;
+    opacity:0.5;
+    height:350px;
+    border:none;
+}
+.googleMap table{
+    width:60%;
+    /*border:1px solid black;*/
+    margin:10px auto;
+}
+.googleMap table td{
+   /*border:1px solid black;*/
+    padding:10px 3px;
+}
+/*contact form*/
+.contact-form{
+    width:40%;
+    height:600px;
+    background-color:#e6faff;
+    border-radius: 10px;
+    display:inline-block;
+    border:1px solid black;
+}
+.contact-form table{
+    width:100%;
+    text-align:center;
+}
+.contact-form table td{
+    padding:10px 0;
+}
+.contact-form input[type=text],input[type=email]{
+    width:90%;
+    height:30px;
+    border-radius:10px;
+}
+.contact-form input[type=submit],input[type=reset]{
+    font-size:18px;
+    border-color:#99ebff;
+    background-color:#ccf5ff;
+
+}
+.contact-form textarea{
+    width:90%;
+    resize:none;
+    height:200px;
+}
+
+</style>
+</head>
+<body>
+<!--top navigation bar (logo,cart icon,user icon, navigation link)-->
+<div class="nav_container">
+    <div class="animation">
+    </div>
+    <div class="logo">
+        <img src="Images/1.jpg" alt="" width="150" height="120">
+    </div>
+    <div class="icon-container">
+        <img src="Images/cart.png" width="50" height="40">
+        <img src="Images/user.png" width="50" height="40">
+    </div>
+    <nav class="navBar">
+        <a href="index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="R&R.html">Review & Rating</a>
+    </nav>
+</div>
+
+<div class="contactUs">
+
+    <form class="contact-form">
+        <table>
+        <tr>
+            <td><img src="Images/email.png" width="100px" height="100px"></td>
+        </tr>
+        <tr>
+            <td>KEEP IN TOUCH WITH US!!</td>
+        </tr>    
+        <tr>
+            <td><input type="text" id="Name" placeholder="Name"/></td>
+        </tr>
+        <tr>
+            <td><input type="email" id="email" placeholder="Email Address"/></td>
+        </tr>
+        <tr>
+            <td><textarea placeholder="Leave your message here"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit">
+            <input type="reset" value="Reset"></td>
+        </tr>
+        </table>
+    </form>
+
+
+    <div class="googleMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.880709041158!2d101.7109965080372!3d3.157485099425237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc37d12d669c1f%3A0xc955b08cfc1aae29!2sSuria%20KLCC!5e0!3m2!1sen!2smy!4v1638191284970!5m2!1sen!2smy" 
+        allowfullscreen="" loading="lazy"></iframe>
+        <hr>
+        <table class="contact-info">
+            <tr>
+                <td><i class="fa fa-phone" style="font-size:24px;"></i></td>
+                <td>(60) 11 123 4567</td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-envelope" style="font-size:24px;"></i></td>
+                <td> example@gmail.com</td>
+            </tr>  
+            <tr>
+                <td><i class="fa fa-map-marker" style="font-size:24px;"></i></td>
+                <td>241, Suria KLCC, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</td>
+            </tr>      
+        </table>    
+    </div>
+</div>
+
+
+<footer>
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://twitter.com" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a></br>
+    <i class="fa fa-copyright"></i>
+    CopyRight 2021 My Company Sdn Bhd
+</footer>
+</body>
+</html>
