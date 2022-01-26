@@ -1,0 +1,56 @@
+/*styling container*/
+.nav_container{
+    background:#ccf5ff;
+    /*position:relative;*/
+    text-align:center;
+    box-shadow: 1px 10px 5px -5px grey;
+    width:100%;
+ }
+ /*styling icon_container*/
+ .icon-container{
+     position:absolute;
+     right:0px;
+     top:0px;
+ }
+ /*styling icon*/
+ .icon-container img{
+     border-radius:50%;
+ }
+ /*styling navigation bar/link*/
+ .navBar{
+     background-color: #80e5ff;
+     overflow:hidden;
+ }
+ .navBar a{
+     text-decoration:none;
+     background-color:#33d6ff;  
+     display:inline-block;
+     padding:10px 20px;
+     width:150px;
+     text-align:center;
+     margin-right:-3px;
+     color:white;
+ }
+ .navBar a:hover{
+     background-color:#00a3cc;
+ }
+
+ /*style scroll bar*/
+ /*width*/
+ ::-webkit-scrollbar {
+    width: 5px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5555; 
+  }
